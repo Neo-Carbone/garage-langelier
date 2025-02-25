@@ -1,5 +1,5 @@
 
-import { Wrench, Car, Tool, ShieldCheck } from "lucide-react";
+import { Wrench, Car, Settings, ShieldCheck, Phone, MapPin } from "lucide-react";
 import Navigation from "@/components/Navigation";
 
 const Index = () => {
@@ -60,7 +60,7 @@ const Index = () => {
               description="Diagnostic et réparation de tous types de problèmes mécaniques."
             />
             <ServiceCard 
-              icon={<Tool />}
+              icon={<Settings />}
               title="Service de Pneus"
               description="Entreposage de pneus et service complet de changement saisonnier."
             />
