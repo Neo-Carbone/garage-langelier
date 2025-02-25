@@ -22,7 +22,7 @@ const Index = () => {
             <div className="relative animate-fade-down">
               <div className="absolute inset-0 bg-coral/10 rounded-3xl transform rotate-3"></div>
               <div className="relative bg-white p-8 rounded-3xl shadow-xl">
-                <img alt="Service automobile professionnel" className="w-full h-auto rounded-2xl" src="/lovable-uploads/d7c4b7b0-ea6d-4c64-83f0-e506cd749ab7.jpg" />
+                <img alt="Service automobile professionnel" className="w-full h-auto rounded-2xl" src="/lovable-uploads/a508739d-35c2-43ee-a0ea-6f7d07603794.jpg" />
               </div>
             </div>
           </div>
