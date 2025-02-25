@@ -1,7 +1,10 @@
+
 import { Wrench, Car, Settings, ShieldCheck, Phone, MapPin } from "lucide-react";
 import Navigation from "@/components/Navigation";
+
 const Index = () => {
-  return <div className="min-h-screen bg-white font-sans">
+  return (
+    <div className="min-h-screen bg-white font-sans">
       <Navigation />
       
       {/* Hero Section */}
@@ -15,14 +18,19 @@ const Index = () => {
               <p className="text-lg text-gray-600 mb-8">
                 Depuis 1997, nous offrons un service d'entretien automobile de qualité supérieure à Québec.
               </p>
-              <a href="#contact" className="inline-block bg-coral text-white px-8 py-4 rounded-lg font-semibold hover:bg-coral-dark transition-colors">
+              <a href="#contact" 
+                 className="inline-block bg-coral text-white px-8 py-4 rounded-lg font-semibold hover:bg-coral-dark transition-colors">
                 Prendre Rendez-vous
               </a>
             </div>
             <div className="relative animate-fade-down">
               <div className="absolute inset-0 bg-coral/10 rounded-3xl transform rotate-3"></div>
               <div className="relative bg-white p-8 rounded-3xl shadow-xl">
-                <img alt="Service automobile professionnel" className="w-full h-auto rounded-2xl" src="https://unsplash.com/photos/man-in-black-jacket-and-blue-denim-jeans-riding-motorcycle-UZUzvJEvKnI" />
+                <img 
+                  src="/lovable-uploads/7d3aea40-5bc1-4a38-a983-787ad6594174.png" 
+                  alt="Service automobile professionnel"
+                  className="w-full h-auto rounded-2xl"
+                />
               </div>
             </div>
           </div>
@@ -41,10 +49,26 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <ServiceCard icon={<Car />} title="Entretien Régulier" description="Changement d'huile, filtres, et inspection complète de votre véhicule." />
-            <ServiceCard icon={<Wrench />} title="Réparations" description="Diagnostic et réparation de tous types de problèmes mécaniques." />
-            <ServiceCard icon={<Settings />} title="Service de Pneus" description="Entreposage de pneus et service complet de changement saisonnier." />
-            <ServiceCard icon={<ShieldCheck />} title="Survoltage" description="Service de survoltage rapide pour les situations d'urgence." />
+            <ServiceCard 
+              icon={<Car />}
+              title="Entretien Régulier"
+              description="Changement d'huile, filtres, et inspection complète de votre véhicule."
+            />
+            <ServiceCard 
+              icon={<Wrench />}
+              title="Réparations"
+              description="Diagnostic et réparation de tous types de problèmes mécaniques."
+            />
+            <ServiceCard 
+              icon={<Settings />}
+              title="Service de Pneus"
+              description="Entreposage de pneus et service complet de changement saisonnier."
+            />
+            <ServiceCard 
+              icon={<ShieldCheck />}
+              title="Survoltage"
+              description="Service de survoltage rapide pour les situations d'urgence."
+            />
           </div>
         </div>
       </section>
@@ -91,23 +115,20 @@ const Index = () => {
           <p className="text-gray-400">© 2024 Garage Langelier Inc. Tous droits réservés.</p>
         </div>
       </footer>
-    </div>;
+    </div>
+  );
 };
-const ServiceCard = ({
-  icon,
-  title,
-  description
-}: {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-}) => {
-  return <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 animate-fade-up">
+
+const ServiceCard = ({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) => {
+  return (
+    <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 animate-fade-up">
       <div className="w-12 h-12 bg-coral/10 rounded-lg flex items-center justify-center mb-4">
         <div className="text-coral">{icon}</div>
       </div>
       <h3 className="text-xl font-semibold text-gray-900 mb-3">{title}</h3>
       <p className="text-gray-600">{description}</p>
-    </div>;
+    </div>
+  );
 };
+
 export default Index;
