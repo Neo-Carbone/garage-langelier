@@ -1,5 +1,6 @@
 import { Wrench, Car, Settings, ShieldCheck, Phone, MapPin } from "lucide-react";
 import Navigation from "@/components/Navigation";
+
 const Index = () => {
   return <div className="min-h-screen bg-white font-sans">
       <Navigation />
@@ -22,7 +23,11 @@ const Index = () => {
             <div className="relative animate-fade-down">
               <div className="absolute inset-0 bg-coral/10 rounded-3xl transform rotate-3"></div>
               <div className="relative bg-white p-8 rounded-3xl shadow-xl">
-                <img alt="Service automobile professionnel" className="w-full h-auto rounded-2xl" src="/lovable-uploads/a508739d-35c2-43ee-a0ea-6f7d07603794.jpg" />
+                <img 
+                  alt="Service automobile professionnel" 
+                  className="w-full h-auto rounded-2xl" 
+                  src="lovable-uploads/a508739d-35c2-43ee-a0ea-6f7d07603794.jpg" 
+                />
               </div>
             </div>
           </div>
@@ -93,6 +98,7 @@ const Index = () => {
       </footer>
     </div>;
 };
+
 const ServiceCard = ({
   icon,
   title,
@@ -110,4 +116,5 @@ const ServiceCard = ({
       <p className="text-gray-600">{description}</p>
     </div>;
 };
+
 export default Index;
