@@ -1,7 +1,6 @@
-
 import { 
   Wrench, Car, Settings, ShieldCheck, Phone, MapPin, 
-  Clock, Award, Tool, Shield, MessageCircle, ChevronRight
+  Clock, Award, Shield, MessageCircle, ChevronRight
 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import { useEffect } from "react";
@@ -94,7 +93,7 @@ const Index = () => {
               description="Meilleur rapport qualité-prix garanti dans la région de Québec."
             />
             <FeatureCard 
-              icon={<Tool />}
+              icon={<Wrench />}
               title="Équipement Moderne"
               description="Technologies de pointe pour un diagnostic précis et rapide."
             />
